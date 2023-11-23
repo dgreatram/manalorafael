@@ -1,29 +1,54 @@
+/* Reset styles */
 body {
     font-family: 'Bungee', Arial, sans-serif;
-    background-color: #191c1e;
+    background-color: #fff;
     color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-
+.btn-liquid {
+    display: inline-block;
+    position: relative;
+    width: 240px;
+    height: 60px;
+    border-radius: 27px;
+    color: #fff;
+    font: 700 14px/60px "Droid Sans", sans-serif;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: none; /* or any other value */
+    background-color: #191c1e; /* Set the desired color */
+    background: transparent;
+    border: none; 
+    
 }
 
 .btn-liquid .inner {
-	position: relative;
-
-	z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .btn-liquid canvas {
-	position: absolute;
-	top: -50px;
-	right: -50px;
-	bottom: -50px;
-	left: -50px;
-
-	z-index: 1;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    bottom: -50px;
+    left: -50px;
+    z-index: 1;
 }
+
+/* Add margin after the "Tutorials" section */
+.space-after {
+    margin-bottom: 60px; /* Adjust the margin size as needed */
+  }
+  
+.space-before {
+    margin-top: 60px;
+}
+/* Header styles */
 header, nav {
     background-color: #0f0f0f;
     padding: 20px 0;
@@ -31,31 +56,30 @@ header, nav {
     transition: background-color 0.5s;
 }
 
-
-
-
+/* Section styles */
 section {
-    background-color: #d4d4d4; /* Light gray background */
-    color: #000000; /* Dark text color */
+    background-color: #d4d4d4;
+    color: #000000;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 20px 0;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 section:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-
+/* Heading styles */
 h2 {
     font-size: 24px;
     text-transform: uppercase;
     color: #ff4654;
 }
 
+/* List styles */
 ul {
     list-style: none;
     padding: 0;
@@ -67,10 +91,12 @@ li {
     text-transform: uppercase;
 }
 
+/* Paragraph styles */
 p {
     font-size: 16px;
 }
 
+/* Button styles */
 .button-container {
     display: flex;
     justify-content: center;
@@ -100,21 +126,21 @@ nav {
     padding: 10px 0;
 }
 
-ul {
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-li {
+nav li {
     display: inline;
     margin-right: 20px;
 }
 
-li:last-child {
+nav li:last-child {
     margin-right: 0;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: #ff4654;
     font-size: 18px;
@@ -123,11 +149,11 @@ a {
     transition: color 0.3s;
 }
 
-a:hover {
+nav a:hover {
     color: #c12d38;
 }
 
-/* Add a subtle animation */
+/* Animation */
 nav {
     animation: fadeIn 1s;
 }
@@ -140,31 +166,32 @@ nav {
         opacity: 1;
     }
 }
-.animate-charcter
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #ff4654 0%,
-    #ff7180 29%,
-    #ff8394 67%,
-    #ffa6bc 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
-  display: inline-block;
-      font-size: 80px;
+
+/* Character animation */
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #ff4654 0%,
+        #ff7180 29%,
+        #ff8394 67%,
+        #ffa6bc 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    font-size: 80px;
 }
 
 @keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
+    to {
+        background-position: 200% center;
+    }
 }
